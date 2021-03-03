@@ -1,0 +1,136 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a {
+    display: block;
+}
+
+.return {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.container {
+    height: 1000px;
+    margin: 20px;
+    padding: 80px;
+}
+
+.container::before{
+    content:"";
+    background-image: url('../image/background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.8;
+    z-index:-1;
+    width:100%;
+    height:1000px;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+.music-div {
+
+}
+
+.music {
+    margin: 0 auto;
+    height: 170px;
+    width: 170px;
+    background: #dddcdc41;
+}
+.pic_div {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.disc {
+    width: 100px;
+    position: absolute;
+    right: 5px;
+    transform: rotate(30deg);
+}
+#music_pic {
+    width: 105px;
+    position: absolute;
+}
+.music_program {
+    height: 2px;
+    width: 105px;
+    background: #555;
+    position: relative;
+    top: 105px;
+}
+.music_program div {
+    height: 100%;
+    width: 0%;
+    background: red;
+}
+.time {
+    width: 100px;
+    height: 20px;
+    position: relative;
+    top: 85px;
+    overflow: hide;
+}
+.time p {
+    padding-left: 33px;
+}
+.time p span:nth-of-type(2) {
+    padding: 0 5px;
+}
+.music_menu {
+    width: 150px;
+    height: 25px;
+    position: relative;
+    top: 85px;
+}
+.music_menu span {
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+    cursor: pointer;
+}
+.music_menu span:nth-of-type(1) {
+    margin-left: 8px;
+    background: url('../image/last.png') no-repeat 7px;
+    background-size: 24px;
+}
+.music_menu span:nth-of-type(2) {
+    margin-left: 14px;
+    background: url('../image/play.png') no-repeat 5px;
+    background-size: 24px;
+}
+.music_menu span:nth-of-type(3) {
+    margin-left: 14px;
+    background: url('../image/next.png') no-repeat 7px;
+    background-size: 24px;
+}
+
+.music-text {
+    width: 340px;
+    height: 400px;
+    margin: 10px auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-family: font1;
+    font-size: 18px;
+}
+
+@font-face{
+    font-family: 'font1';
+    src:url('../font-family/font1.TTF');
+}

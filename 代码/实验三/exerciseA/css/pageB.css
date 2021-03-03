@@ -1,0 +1,79 @@
+.container {
+    position: relative;
+}
+
+.container1 {
+    position: relative;
+    margin: 20px auto;
+    width: 1040px;
+    height: 220px;
+}
+
+#box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.all{
+    position: absolute;
+    top: 10px;
+    left: 220px;
+    width:500px;
+    height:200px;
+    border:1px solid #ccc;
+    padding: 0;
+    
+}
+.screen{
+    width:500px;
+    height:200px;
+    padding: 0;
+    margin: 0;
+    overflow:hidden;
+    position:relative;
+}
+.screen li{ width:500px; height:200px; overflow:hidden; float:left;position: relative;}
+.screen ul{ position:absolute; left:0; top:0; width:3500px; padding: 0; margin: 0;}
+.all ol{ position:absolute; right:20px; bottom:0px; line-height:20px; text-align:center;}
+.all ol li{ float:left; width:20px; height:20px; background:#fff; border:1px solid #ccc; margin-left:0px; cursor:pointer;}
+.all ol li.current{ background: transparent;}
+
+#arr {display: none;}
+#arr span{ width:40px; height:40px; position:absolute; left:5px; top:50%; margin-top:-20px; background:#000; cursor:pointer; line-height:40px; text-align:center; font-weight:bold; font-family:'黑体'; font-size:30px; color:#fff; opacity:0.3; border:1px solid #fff;}
+#arr #right{right:5px; left:auto;}
+
+.pic {
+    position: absolute;
+    top: 10px;
+    left: 730px;
+}
+
+.float-pic {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.time {
+    width: 200px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container2{
+    position: relative;
+    width: 1040px;
+    height: 500px;
+    margin: 20px auto;
+    background-image: url("../image/flower.jpg");
+    background-size: cover;
+}
+
+.video {
+    position: relative;
+    width: 600px;
+    margin: 50px 220px;
+}

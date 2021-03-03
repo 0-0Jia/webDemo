@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>homework a</title>
+    <link href="./css/index.css"  rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <form action="http://192.168.64.2/Service.php" method="post" onsubmit="return check()">
+        <div class="main">
+
+            <div class="quarter-div blue">
+                <div class="form-container">
+
+                    <div>
+                        <span>用户名：</span>
+                        <input type="name" name="name" id="username">
+                    </div>
+                    <div>
+                        <span>密码：</span>
+                        <input type="password" name="password" id="pwd">
+                    </div>
+                    <div>
+                        <span>再次输入密码：</span>
+                        <input type="password" id="pwd-again">
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="quarter-div green">
+                <div class="select-div">
+                    地区：<br>
+                    <select id="a" name="sheng" id="sheng">
+                        <option>省份</option>
+                    </select>
+                    <select id="b" name="shi" id="shi">
+                        <option>地级市</option>
+                    </select>
+                    <select id="c" name="xian" id="xian">
+                        <option>市/县级市</option>
+                    </select>
+                </div>
+            </div>
+            <div class="quarter-div orange">
+                <div class="checkbox-container">
+                    爱好：
+                    <div class="checkbox-div">
+                        <label for="Checkbox1" style="display:none;"></label>
+                        <input type="checkbox" id="Checkbox1" name="checkbox[]" value="跳舞" class="input_check">
+                        <span>跳舞</span>
+                    </div>
+                    <div class="checkbox-div">
+                        <label for="Checkbox2" style="display:none;"></label>
+                        <input type="checkbox" id="Checkbox2" name="checkbox[]" value="运动" value="option1"
+                            class="input_check">
+                        <span>运动</span>
+                    </div>
+                    <div class="checkbox-div">
+                        <label for="Checkbox3" style="display:none;"></label>
+                        <input type="checkbox" id="Checkbox3" name="checkbox[]" value="书法" value="option1"
+                            class="input_check">
+                        <span>书法</span>
+                    </div>
+                    <div class="checkbox-div">
+                        <label for="Checkbox4" style="display:none;"></label>
+                        <input type="checkbox" id="Checkbox4" name="checkbox[]" value="乐器" value="option1"
+                            class="input_check">
+                        <span>乐器</span>
+                    </div>
+                    <div class="checkbox-div">
+                        <label for="Checkbox5" style="display:none;"></label>
+                        <input type="checkbox" id="Checkbox5" name="checkbox[]" value="游戏" value="option1"
+                            class="input_check">
+                        <span>游戏</span>
+                    </div>
+                </div>
+            </div>
+            <div class="quarter-div yellow">
+                <div class="message-container">
+                    留言：
+                    <div>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <input type="submit" value="提交" id="submit">
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./js/city.js"></script>
+    <script>
+        let username = document.getElementById('username');
+        let pwd = document.getElementById('pwd');
+        let pwdAgain = document.getElementById('pwd-again');
+
+        let sheng = document.getElementById('sheng');
+        let shi = document.getElementById('shi');
+        let xian = document.getElementById('xian');
+
+        let message = document.getElementById('message');
+
+
+        function check() {
+            if (IsEmpty(pwdAgain.value) || IsEmpty(pwdAgain.value) || IsEmpty(username.value) || IsEmpty(message.value)) {
+                alert('请检查输入是否为空！')
+                return false;
+            }
+
+            if (pwd.value !== pwdAgain.value) {
+                alert("密码输入时不一致，请重新输入")
+                return false;
+            }
+        }
+
+        function IsEmpty(his) {
+            flag = true;
+            for (var i = 0; i < his.length; i++) {
+                if (his.charAt(i) != " ") {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
+
+    </script>
+</body>
+
+</html>

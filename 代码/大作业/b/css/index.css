@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eee;
+    padding-bottom: 100px;
+}
+
+.box {
+    width: 100%;
+    height: 45px;
+    background: rgb(14, 180, 221) url("../images/sun.png") right center no-repeat;
+    margin: 0 auto;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+}
+
+.nav-li {
+    float: left;
+    width: 83px;
+    height: 42px;
+    text-align: center;
+    font: 500 16px/42px "simsun";
+    cursor: pointer;
+}
+
+span {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 83px;
+    height: 45px;
+    background: url("../images/cloud.png") no-repeat;
+    background-size: 83px 38px;
+}
+
+.wrap {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.wrap a {
+    text-decoration: none;
+    color: #000;
+}
+
+.wrap ul {
+    position: absolute;
+    top: 50px;
+    display: none;
+    background-image: url("../images/water.png");
+    background-repeat: repeat;
+    background-size: 30px 21px;
+    z-index: 5;
+}
+
+
+.all{
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 3% auto;
+    text-align: center;
+    padding: 0;    
+}
+.screen{
+    float: left;
+    width:500px;
+    height:650px;
+    padding: 0;
+    margin: 0 auto;
+    overflow:hidden;
+    position:relative;
+    text-align: center;
+}
+.screen li{ width:500px; height:600px; overflow:hidden; float:left;position: relative;font-size: 16px;}
+.screen ul{ position:absolute; left:0; top:0; width:2000px; padding: 0; margin: 0;}
+.all ol{ position:absolute; right:20px; bottom:20px; line-height:20px; text-align:center;}
+.all ol li{ float:left; width:20px; height:20px; background:#fff; border:1px solid #ccc; margin-left:0px; cursor:pointer; } 
+.all ol li.current{ background: transparent;}
+
+#arr {display: none;}
+#arr span{ width:40px; height:40px; position:absolute; left:5px; top:50%; margin-top:-20px; background:#000; cursor:pointer; line-height:40px; text-align:center; font-weight:bold; font-family:'黑体'; font-size:30px; color:#fff; opacity:0.3; border:1px solid #fff;}
+#arr #right{right:5px; left:auto;}
+
+.description {
+    float: left;
+    text-align: left;
+}
+
+.description ul {
+    width: 300px;
+    height: 600px;
+}
+
+.description ul li {
+    width: 298px;
+    height: 198px;
+    border: 1px solid rgba(179, 178, 178, 0.384);
+    color: white;
+    font-family: font1;
+}
+
+.description ul li:hover {
+    opacity: 0.8;
+}
+
+.description ul li h2{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 30px 20px;
+}
+
+.description ul li p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 20px;
+}
+
+.scroll-div {
+    position: relative;
+    width: 80%;
+    height:160px;
+    margin: 2% auto;
+    padding: 1% 0;  
+    text-align: center;
+}
+.scroll-div2 {
+    position: relative;
+    width: 80%;
+    height:40px;
+    margin: 2% auto;
+    padding: 1% 0;  
+    text-align: center;
+}
+
+.screen2 {
+    margin: 3% auto;
+}
+
+/*表格*/
+.table-div {
+    position: relative;
+    width: 80%;
+    height:160px;
+    margin: 2% auto;
+    padding: 1% 0;  
+    text-align: center;
+}
+table.gridtable {
+    margin: 3% auto;
+    font-family: verdana,arial,sans-serif;
+    font-size: 18px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+table.gridtable th {
+    border-width: 1px;
+    padding: 10px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+table.gridtable td {
+    border-width: 1px;
+    padding: 10px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+
+
+
+.mirror-div{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1% 0;  
+}
+
+.mirror-box {
+    margin: 0 auto;
+    width: 350px;
+    height: 350px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.big {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 360px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: none;
+}
+.mask {
+    width: 175px;
+    height: 175px;
+    background: rgba(255, 255, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: move;
+    display: none;
+}
+.small {
+    position: relative;
+}
+.small img {
+    width: 350px;
+    height: 350px;
+    vertical-align: top;
+}
+.big img {
+    width: 800px;
+    height: 800px;
+}
+
+.titleh2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    text-align: left;
+    color: rgb(14, 180, 221);
+    padding-left: 10px;
+    border-left: 10px solid rgb(14, 180, 221);
+}
+
+
+
+@font-face {
+    font-family: 'font1';
+    src: url('../font-family/font1.TTF');
+}

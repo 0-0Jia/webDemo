@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>jQuery Mobile创建的第一个网页</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!--引用jQuery Mobile函数库-->
+	<link rel="stylesheet" href="jquery.mobile-1.4.0.min.css" />
+	<script src="jquery-1.9.1.min.js"></script>
+	<script src="jquery.mobile-1.4.0.min.js"></script>
+	<!--最佳化屏幕宽度-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+
+		h1,h2,h3,h4,h5 {
+			font-weight: 400;
+		}
+
+		#header, #footer {
+			border: none;
+			background-color: rgb(70, 105, 170);
+			color: white;
+		}
+		
+		.next-div {
+			text-align: right;
+		}
+		.next {
+			width: 100px;
+			height: 40px;
+			border-radius: 5px;
+			color: white;
+			text-decoration: none;
+		}
+
+		.content {
+			text-align: center;
+			width: 80%;
+			height: 84vh;
+			margin: 0 auto;
+		}
+
+		.content img {
+			width: 20%;
+			height: 20%;
+			margin: 10%;
+		}
+
+		.table-div {
+			width: 80%;
+			margin: 0 auto;
+			text-align: center;
+		}
+		table {
+			margin: 0 auto;
+			font-family: verdana,arial,sans-serif;
+			font-size:15px;
+			color:#333333;
+			border-width: 1px;
+			border-color: #666666;
+			border-collapse: collapse;
+		}
+		table th {
+			border-width: 1px;
+			padding: 8px;
+			border-style: solid;
+			border-color: #666666;
+			background-color: #dedede;
+		}
+		table td {
+			border-width: 1px;
+			padding: 8px;
+			border-style: solid;
+			border-color: #666666;
+			background-color: #ffffff;
+		}
+
+		#pic {
+			width: 65%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<!--第一页-->
+	<div data-role="page" data-title="第一页" id="first">
+		<div data-role="header" id="header">
+			<h1>广工新闻</h1>
+		</div>
+		<div data-role="content" class="content">
+			<div>
+				<div>
+					<a href="https://news.qq.com/"><img src="./image/xinwen.png"></a>
+					<a href="https://www.toutiao.com/"><img src="./image/toutiao.jpg"></a>
+				</div>
+				<div>
+					<a href="https://jsjxy.gdut.edu.cn/"><img src="./image/jisuanji.jpg"></a>
+					<a href="https://world.taobao.com/"><img src="./image/taobao.jpg"></a>
+				</div>
+			</div>
+			<div class="next-div"><a href="#second" class="next">下一页</a></div>
+		</div>
+		<div data-role="footer" id="footer">
+			<h4>www.gdut.edu.cn<br>粤ICP备05008833号<br>广州市番禺区广州大学城外环西路100号(510006)</h4>
+		</div>
+	</div>
+	<!--第二页-->
+	<div data-role="page" data-title="第二页" id="second">
+		<div data-role="header" id="header">
+			<a data-rel="back">回上页</a>
+			<h1>表格</h1>
+		</div>
+		<div data-role="content" class="content">
+			<div class="table-div">
+				<table>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+					</tr>
+				</table>
+			</div>
+			<div class="next-div"><a href="#third" class="next">下一页</a></div>
+		</div>
+		<div data-role="footer" id="footer">
+			<h4> (≧▽≦)/ </h4>
+		</div>
+	</div>
+	<!--第三页-->
+	<div data-role="page" data-title="第三页" id="third">
+		<div data-role="header" id="header">
+			<a data-rel="back">回上页</a>
+			<h1>李白《行路难•其一》</h1>
+		</div>
+		<div data-role="content" class="content">
+			<div>
+				<img src="./image/pic.png" id="pic">
+			</div>
+			<div>
+				<p>金樽清酒斗十千，玉盘珍羞直万钱。</p>
+				<p>停杯投箸不能食，拔剑四顾心茫然。</p>
+				<p>欲渡黄河冰塞川，将登太行雪满山。</p>
+				<p>闲来垂钓碧溪上，忽复乘舟梦日边。</p>
+				<p>行路难，行路难，多歧路，今安在？</p>
+				<p>长风破浪会有时，直挂云帆济沧海。</p>
+			</div>
+		</div>
+		<div data-role="footer" id="footer">
+			<h4>长风破浪会有时，直挂云帆济沧海。</h4>
+		</div>
+	</div>
+</body>
+
+</html>

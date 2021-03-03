@@ -1,0 +1,62 @@
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+    font-size: 3.5rem;
+}
+
+.picture {
+    position: relative;
+    width: 100%;
+    margin: 2% auto;
+    padding: 0;
+}
+
+.simple-picture {
+    width: 92%;
+    margin: 0 3%;
+    z-index: 1;
+    border: 15px solid rgba(253, 252, 252, 0.1);
+}
+
+
+.blur-picture {
+    width: 100%;
+    padding: 0;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: -0.1%;
+    z-index: -1;
+}
+
+.link-container {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.link-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.table-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text-table {
+    margin: 0 auto;
+    font-weight: 600;
+    color: rgb(0, 112, 192);
+    font-size: 30px;
+    font-family: 宋体;
+}

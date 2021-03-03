@@ -1,0 +1,442 @@
+body {
+    background-color: black;
+    font-family: Font-one;
+    overflow-x: hidden;
+}
+h1 {
+    color: rgba(255, 255, 255, 0.534);
+    font-family: Font-two;
+    text-align: center;
+}
+
+/*页眉*/
+.header {
+    position: relative;
+    height: 756px;
+    width: 100%;
+    color: white;
+    border: 1px solid black;
+    background-image: url("../image/background-img.jpg");
+    background-position: top center;
+    box-shadow: 1px 1px 1px 0 rgba(37, 37, 37, 0.8);
+    z-index: 800;
+}
+/*导航*/
+nav {
+    float: right;
+    width: 50%;
+    background-color: transparent;
+    font-size: 180%;
+    text-align: center;
+    font-family: Font-two;
+    }
+    nav ul {
+        position: relative;
+        list-style-type: none;
+        margin: 8px 0;
+        padding: 10px;
+        line-height: 210%;
+    }
+    nav ul li{
+        display: inline;
+        padding: 6px 0;
+        margin: 0 1px;
+    }
+    nav ul li a {
+        color: white;
+        padding: 15px 10px;
+        margin: 4px;
+        text-decoration: none;
+    }
+    /* 鼠标移动到选项上修改颜色 */
+    nav ul li a:hover {
+        color: black;
+        background-color: white;
+    }
+.header .title {
+    position: absolute;
+    right: 0;
+    bottom: 11%;
+    width: 45%;
+    height: 60%; 
+}
+.title p {
+    font-size: 50px;
+}
+.button {
+    background-color: transparent;
+    border: 4px solid white;
+    color: white;
+    font-family: Font-two;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 52px;
+    margin: 2px 2px;
+    cursor: pointer;
+    width: 145px;
+    height: 56px;
+    border-radius: 10%;
+}
+.button:hover {
+    background-color: white;
+    color: black; 
+}
+.button:active {
+    background-color: transparent;
+    color: white;
+}
+/*ME*/
+.container-one {
+    position: relative;
+    height: 25%;
+    text-align: center;
+    padding: 0.1% 0;
+    background-image: url("../image/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    z-index: 999;
+}
+.container-one .title-me {
+    position: relative;
+    left: -22%;
+    margin-top: 7%;
+    text-align: left; 
+}
+.container-one ul li{
+    list-style-type: square;
+}
+.words {
+    width: 70%;
+    margin-left: 160px;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: left;
+}
+.square {
+    position: relative;
+    width: 25px;
+	height: 25px;
+	background: black;
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+.blank {
+    position: absolute;
+    right: 2%;
+    bottom: 10%;
+    width: 25%;
+    z-index: -1;
+}
+.container-one .photo img {
+    position: relative;
+    height: 352px;
+    width: 263px;
+    max-height: 100%;
+    max-width: 100%;
+}
+.container-one .line-one {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*MY TEAM*/
+.container-two {
+    height: 18.4%;
+    padding: 8px 0;
+    padding-top: 30px;
+    background-image: url("../image/2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 25px;
+    line-height: 35px;
+    z-index: -1;
+}
+.text {
+    text-align: center;
+}
+.text ul {
+    width: 90%;
+    margin: 2% auto;
+}
+.text ul li {
+    list-style: none;
+    color: white;
+    padding: 0 5%;
+    font-size: 100%;
+}
+.image-all {
+    text-align: center;
+}
+#image-one:hover {
+    border: 2px dashed white;
+}
+#image-two:hover {
+    border: 2px dashed white;
+}
+#image-three:hover {
+    border: 2px dashed white;
+}
+.container-two ul li a:link {
+    color: white;
+    text-decoration: none;
+}
+.container-two ul li a:visited {
+    color: white;
+    text-decoration: none;
+}
+.container-two ul li a:hover {
+    color: #5c3109;
+    text-decoration: none;
+    border-bottom: 1px solid white; 
+}
+.container-two .line-one {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*MY DREAM*/
+.container-three {
+    padding: 20px;
+    font-size: 25px;
+    line-height: 35px;
+    height: 40%;
+    background-image: url("../image/3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -100;
+}
+.container-three span {
+    font-family: 楷体;
+    line-height: 30px;
+}
+.container-three p {
+    position: relative;
+    text-indent: 32px;
+    line-height: 50px;
+    margin: auto 40px;
+    color: black;
+}
+.container-three .line-one {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-three ol {
+  color: white;
+  background: linear-gradient(#fba95d, #7f3f03, #fba95d);
+  -webkit-background-clip: text;                        /*必需加前缀 -webkit- 才支持这个text值 */
+  -webkit-text-fill-color: transparent;                 /*text-fill-color会覆盖color所定义的字体颜色： */
+}
+.container-three p:hover {
+    background-color: rgba(255, 255, 255, 0.267);
+}
+.container-three .key-point {
+    font-family: Font-one;
+    background-color: rgba(255, 255, 255, 0.267);
+}
+.container-three .key-point:hover {
+    font-family: Font-one;
+    background-color: white;
+}
+.container-three  a:link {
+    color: gray;
+    text-decoration: none;
+}
+.container-three a:visited {
+    color: rgb(110, 63, 2);
+    text-decoration: none;
+}
+.container-three a:hover {
+  color: rgb(73, 42, 2);
+  text-decoration: none;
+}
+/*页脚*/
+.footer {
+    position: relative;
+    padding-top: 4px;
+    height: 10.3%;
+    color: white;
+    font-size: 25px;
+    line-height: 35px;
+    background-image: url("../image/4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    box-shadow: 1px 0 1px 1px rgba(37, 37, 37, 0.8);
+}
+.footer .line-two {
+    width: 300px;
+    height: 3px;
+    margin: 0px auto;
+    padding: 0px;
+    overflow: hidden;
+    background-color: white;
+    opacity: 0.5;
+}
+.footer img {
+    height: 100px;
+    width: 100px;
+    padding: 0 2%;
+}
+
+/*动态类牛顿摆装饰*/
+.loader span{
+    position: relative;
+    width: 200px;
+    height: 20px;
+    background-color: white;
+}
+.loader span::before{
+    content: '';
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+}
+.loader span:first-child{
+    animation: moving-left 2s infinite;
+    animation-direction: alternate;
+}
+.loader span:last-child{
+    animation: moving-right 2s infinite;
+    animation-direction: alternate;
+}
+@keyframes moving-left{
+    0%{
+        left: 93px;
+    }
+    50%{
+        left: 150px;
+    }
+    100%{
+        left: 93px;
+    }
+}
+@keyframes moving-right{
+    0%{
+        right: 93px;
+    }
+    50%{
+        right: 150px;
+    }
+    100%{
+        right: 93px;
+    }
+}
+
+/*动态小方块*/
+@keyframes myfirst
+{
+    0% {
+        background: transparent; left: 240px; top: -400px;
+    }
+	33.3% {
+        background: white; left: -50px; top: -400px;
+    }
+	66.6% {
+        background: transparent; left: -50px; top: 15px;
+    }
+	100% {
+        background: white; left: 240px; top: 15px;
+    }
+	
+}
+/*字体*/
+@font-face {
+    font-family:'Font-one'; 
+    src:url('font-family/EuroSansPro Bold.ttf'); 
+}
+@font-face {
+    font-family:'Font-two'; 
+    src:url('font-family/NewJune-Bold-Italic.otf'); 
+}
+@font-face {
+    font-family:'Font-three'; 
+    src:url('font-family/腾祥范笑歌楷书繁.ttf'); 
+}
+/*响应式布局*/
+/* ----------- */
+@media only screen
+and (min-device-width : 1340px)
+and (max-device-width : 1876px) {
+/* Styles如上 */
+}
+/* ----------- */
+@media only screen
+and (min-width : 1340px) {
+    .all {
+        width: 1340px;  /*冻结布局*/
+    }
+}
+/* ----------- */
+@media only screen
+and (max-width : 958px) {
+    h1 {
+        font-size: 120%;
+    }
+    /*页眉*/
+    .header {
+        font-size: 80%;
+    }
+    nav ul li {
+        font-size: 110%;
+    }
+    .extra {
+        display: none;
+    }
+    .title p {
+        font-size: 30px;
+    }
+    /*第一部分*/
+    .container-one .title-me {
+        position: relative;
+        left: -22%;
+        margin-top: 7%;
+        text-align: left; 
+    }
+    .container-one ul li{
+        list-style-type: square;
+    }
+    .words {
+        width: 50%;
+        margin-left: 80px;
+        font-size: 20px;
+    }
+    .square {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        background: black;
+        animation: myfirst 5s infinite;
+        animation-direction: alternate;
+    }
+    .container-one .photo img {
+        position: relative;
+        height: 352px;
+        width: 263px;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .container-one .line-one {
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*第二部分*/
+    .text ul li {
+        display: inline;  
+        color: white;
+        padding: 0 4%;
+        font-size: 100%;
+    }
+}
+

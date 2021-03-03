@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.quarter-div {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+.blue {
+    /* background-color: #5BC0DE; */
+    background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607230481066&di=3c008a48de2f3ddc7e386596b3f24717&imgtype=0&src=http%3A%2F%2Fimage.biaobaiju.com%2Fuploads%2F20190610%2F16%2F1560156185-WaoXTEwsep.jpg");
+    background-attachment: fixed;
+    background-size: 60%;
+    background-position: 0 -512%;
+    background-repeat: no-repeat;
+}
+
+.green {
+    /* background-color: #5CB85C; */
+    background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607230481066&di=3c008a48de2f3ddc7e386596b3f24717&imgtype=0&src=http%3A%2F%2Fimage.biaobaiju.com%2Fuploads%2F20190610%2F16%2F1560156185-WaoXTEwsep.jpg");
+    background-attachment: fixed;
+    background-size: 65%;
+    background-position: 100% 10%;
+    background-repeat: no-repeat;
+}
+
+.orange {
+    /* background-color: #F0AD4E; */
+    background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607230481066&di=3c008a48de2f3ddc7e386596b3f24717&imgtype=0&src=http%3A%2F%2Fimage.biaobaiju.com%2Fuploads%2F20190610%2F16%2F1560156185-WaoXTEwsep.jpg");
+    background-attachment: fixed;
+    background-size: 60%;
+    background-position: 0 131%;
+    background-repeat: no-repeat;
+}
+
+.yellow {
+    /* background-color: #e698bc; */
+    background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607230481060&di=bc68e3e7c66156e4dad7119a949cf3da&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F16%2F08%2F26%2F1057bfa99890607.jpg');
+    background-attachment: fixed;
+    background-size: 50%;
+    background-position: 100% 230%;
+    background-repeat: no-repeat;
+}
+
+.form-container {
+    width: 60%;
+    height: 60%;
+    margin: 20% 0;
+    margin-left: 35%;
+    text-align: left;
+}
+
+.form-container div {
+    margin: 5% auto;
+}
+
+.form-container span {
+    float: left;
+    display: block;
+    width: 120px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.form-container input {
+    width: 200px;
+    height: 25px;
+}
+
+.select-div {
+    width: 50%;
+    margin: 20% 0;
+    margin-left: 20%;
+    text-align: left;
+    font-size: 25px;
+}
+
+select {
+    height: 30px;
+    font-size: 20px;
+}
+
+.checkbox-container {
+    margin: 16% 5%;
+    margin-left: 40%;
+    width: 45%;
+    font-size: 25px;
+}
+
+.checkbox-div {
+    margin: 2% auto;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+/* 复选框checkbox */
+.input_check {
+    float: left;
+    width: 27px;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    display: none;
+}
+
+.checkbox-div span {
+    margin-left: 8px;
+}
+
+/* 未选 */
+.input_check {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 25px;
+    height: 25px;
+    background: white;
+
+}
+
+input[type=file]:focus,
+input[type=checkbox]:focus,
+input[type=radio]:focus {
+    outline: none;
+    /* outline （轮廓）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。outline 属性设置元素周围的轮廓线。*/
+}
+
+/* 鼠标滑过未选 */
+input[type=file]:hover,
+input[type=checkbox]:hover,
+input[type=radio]:hover {
+    border-color: #3bb8f6;
+}
+
+/* 已选 */
+.input_check:checked {
+    display: inline-block;
+    background-image: url('../image/check1.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+    border: none;
+}
+
+/* 鼠标滑过已选 */
+.input_check:checked:hover {
+    display: inline-block;
+    background-image: url('../image/check2.png');
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+}
+
+.message-container {
+    margin: 14% auto;
+    width: 72%;
+    height: 100%;
+    font-size: 25px;
+}
+
+.message-container div {
+    margin: 2% auto;
+}
+
+.message-container textarea {
+    width: 80%;
+    height: 200px;
+    padding: 5px 8px;
+    resize: none;
+    font-size: 16px;
+}
+
+.message-container input {
+    float: right;
+    width: 140px;
+    height: 40px;
+    font-size: 25px;
+}
